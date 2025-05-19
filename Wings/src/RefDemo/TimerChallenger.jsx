@@ -5,6 +5,7 @@ const TimerChallenger = ({ title, totalTime }) => {
   const [timerStarted, setTimerStared] = useState(false);
   const [timeExpired, setTimeExpired] = useState(false);
 
+
   const hanldeStart = () => {
     setTimeout(() => {
       setTimeExpired(true);
@@ -22,6 +23,10 @@ const TimerChallenger = ({ title, totalTime }) => {
       <button onClick={timeExpired ? handleStop : hanldeStart}>
         {timeExpired ? "Start" : "Stop"}
       </button>
+
+
+      <Modal msg={msg} ref={modalRef}/>
+
     </div>
   );
 };
