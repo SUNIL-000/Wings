@@ -5,10 +5,10 @@ const Modal = ({ ref, msg }) => {
     ref.current.close();
   };
   return (
-    <modal>
+    <Modal>
       <p>{msg}</p>
       <button onClick={hancleClose}></button>
-    </modal>
+    </Modal>
   );
 };
 

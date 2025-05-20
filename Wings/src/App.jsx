@@ -7,10 +7,10 @@ const App = () => {
   console.log("every Thing is fine");
   return (
     <>
+      <h1 className="text-3xl text-purple-800">Hello</h1>
       {/* <RefApp /> */}
       {/* <ForwardRefApp /> */}
-      <TImerApp />
-      {/* <h1>Hii App</h1> */}
+      {/* <TImerApp /> */}
     </>
   );
 };
